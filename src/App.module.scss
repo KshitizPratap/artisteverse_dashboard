@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #b6a2fb;
+    --primary-color-hover: #9747ff;
+    --secondary-color: #102cc1;
+    --background-black: #000;
+    --text-color: #fff;
+    --heading-size: 24px;
+    --subheading-large: 20px;
+    --subheading-small: 18px;
+    --para-large: 14px;
+    --para-small: 12px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--text-color);
+    font-family: Urbanist serif;
+    background-color: var(--background-black);
+    height: 100vh;
+    width: 100vw;
+}
