@@ -1,12 +1,12 @@
 import Profile from "./profile/Profile";
+import Logo from "../../assets/logo.png";
 import classes from "./header.module.scss";
 
 const Header = () => {
   return (
     <div className={classes.mainContainer}>
       <div>
-        <img src="" alt="" />
-        <h2>Heading</h2>
+        <img src={Logo} alt="" />
       </div>
       <Profile />
     </div>

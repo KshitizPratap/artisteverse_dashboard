@@ -1,7 +1,8 @@
 import React from "react";
+import classes from "./overview.module.scss";
 
 const Overview = () => {
-  return <div>Overview</div>;
+  return <div className={classes.mainContainer}>Overview</div>;
 };
 
 export default Overview;

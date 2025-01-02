@@ -1,0 +1,14 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include flex-container(row, flex-start, center, 225px);
+
+  .profileName {
+    @include flex-container(column, flex-start, center);
+  }
+
+  img {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
