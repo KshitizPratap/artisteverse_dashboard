@@ -7,8 +7,7 @@
     @include flex-container(column, flex-start, center);
   }
 
-  img {
-    background-color: #fff;
-    border-radius: 50%;
+  .profilePic {
+    width: 60px;
   }
 }

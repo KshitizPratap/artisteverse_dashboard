@@ -3,8 +3,7 @@
 .mainContainer {
   @include flex-container(row, space-between, center);
 
-  width: 100%;
-  min-height: 80px;
+  height: 80px;
   padding: 0 2rem;
   position: fixed;
   top: 0;
@@ -13,7 +12,7 @@
   background-color: var(--tertiary-color);
   border-bottom: 1px solid rgb(45, 45, 45);
 
-  img {
+  .logo {
     width: 325px;
   }
 }

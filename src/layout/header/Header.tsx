@@ -5,9 +5,7 @@ import classes from "./header.module.scss";
 const Header = () => {
   return (
     <div className={classes.mainContainer}>
-      <div>
-        <img src={Logo} alt="" />
-      </div>
+      <img className={classes.logo} src={Logo} alt="" />
       <Profile />
     </div>
   );

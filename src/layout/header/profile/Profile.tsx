@@ -1,4 +1,3 @@
-import React from "react";
 import ProfilePic from "../../../assets/profile.jpg";
 import classes from "./profile.module.scss";
 
@@ -9,7 +8,7 @@ const Profile = () => {
         <span>Welcome,</span>
         <span>{"user-name"}</span>
       </div>
-      <img src={ProfilePic} alt="" />
+      <img src={ProfilePic} alt="" className={classes.profilePic} />
     </div>
   );
 };
