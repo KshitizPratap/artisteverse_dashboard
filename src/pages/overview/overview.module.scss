@@ -1,4 +1,7 @@
+@import "/src/common/style/utils.scss";
+
 .mainContainer {
-  height: 50vh;
-  background-color: var(--secondary-color);
+  @include flex-container(row, space-around, center, 100%, 2rem);
+
+  padding: 1rem;
 }

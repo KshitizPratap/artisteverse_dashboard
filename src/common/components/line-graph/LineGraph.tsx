@@ -3,15 +3,15 @@ import {
   Area,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
 import { data } from "../../dummyData";
+import classes from "./lineGraph.module.scss";
 
 const LineGraph = () => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer className={classes.graphContainer}>
       <AreaChart width={500} height={400} data={data}>
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -19,9 +19,8 @@ const LineGraph = () => {
             <stop offset="75%" stopColor="#b6a2fb" stopOpacity={0.3} />
           </linearGradient>
         </defs>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
+        <XAxis stroke="#fff" tick={false} padding={{ right: 20 }} />
+        <YAxis stroke="#fff" tick={false} padding={{ top: 20 }} />
         <Tooltip />
         <Area
           type="monotone"

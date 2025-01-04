@@ -1,0 +1,11 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include flex-container(column);
+
+  min-height: 250px;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  position: relative;
+}
