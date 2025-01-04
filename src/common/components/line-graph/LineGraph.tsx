@@ -21,7 +21,17 @@ const LineGraph = () => {
         </defs>
         <XAxis stroke="#fff" tick={false} padding={{ right: 20 }} />
         <YAxis stroke="#fff" tick={false} padding={{ top: 20 }} />
-        <Tooltip />
+        <Tooltip
+          contentStyle={{
+            height: "50px",
+            width: "50px",
+            backgroundColor: "var(--primary-color)",
+            padding: "0",
+          }}
+          itemStyle={{
+            color: "#fff",
+          }}
+        />
         <Area
           type="monotone"
           dataKey="uv"

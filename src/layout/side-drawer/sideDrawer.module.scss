@@ -25,10 +25,20 @@
     text-align: center;
     border-radius: 6px;
     font-size: var(--subheading-small);
+    transition: all ease 0.3s;
+  }
+
+  a:hover,
+  button:hover {
+    background-color: var(--primary-color-hover);
   }
 
   button {
     border: none;
     font-family: "Urbanist";
+  }
+
+  .active {
+    background-color: var(--primary-color-hover);
   }
 }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import routes from "../../common/routes";
 import classes from "./sideDrawer.module.scss";
 
@@ -7,7 +7,15 @@ const SideDrawer = () => {
     <div className={classes.mainContainer}>
       <div className={classes.routesContainer}>
         {routes.map((route) => {
-          return <Link to={route.path}>{route.title}</Link>;
+          return (
+            <NavLink
+              to={route.path}
+              className={({ isActive }) => (isActive ? classes.active : "")}
+              key={route.path}
+            >
+              {route.title}
+            </NavLink>
+          );
         })}
       </div>
 

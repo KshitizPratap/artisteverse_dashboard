@@ -4,8 +4,28 @@
   @include flex-container(column);
 
   min-height: 250px;
-  padding: 2rem;
+  min-width: 250px;
+  flex: 1 1 250px;
+  padding: 1.5rem;
   background-color: var(--secondary-color);
   border-radius: 4px;
   position: relative;
+
+  .metricHeader {
+    .title p:first-of-type {
+      font-size: var(--para-large);
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .title p:nth-of-type(2) {
+      font-size: var(--subheading-small);
+      line-height: 140%;
+    }
+
+    .title p:last-of-type {
+      font-size: var(--para-small);
+    }
+  }
 }

@@ -7,7 +7,7 @@ const overviewMetrics: Array<MetricProps> = [
     metricType: "line",
     title: "Streams",
     total: "42563",
-    relativeProgress: "10.1%",
+    relativeProgress: "+10.1%",
   },
   {
     metricType: "line",
@@ -19,7 +19,7 @@ const overviewMetrics: Array<MetricProps> = [
     metricType: "line",
     title: "No. of Visits",
     total: "362342",
-    relativeProgress: "8.7%",
+    relativeProgress: "+8.7%",
   },
 ];
 

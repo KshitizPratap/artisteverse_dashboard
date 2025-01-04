@@ -4,4 +4,5 @@
   @include flex-container(row, space-around, center, 100%, 2rem);
 
   padding: 1rem;
+  flex-wrap: wrap;
 }
