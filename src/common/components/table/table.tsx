@@ -9,7 +9,8 @@ type TableProp = {
 };
 
 const Table = ({ title, size = "medium" }: TableProp) => {
-  const [limit, setLimit] = useState(5);
+  // const [limit, setLimit] = useState(5);
+  const limit = 5;
   const [offset, setOffset] = useState(0);
   const totalPages = Math.ceil(dataTable.length / limit);
   const currentPage = Math.floor(offset / limit) + 1;
