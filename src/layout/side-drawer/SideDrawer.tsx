@@ -1,12 +1,12 @@
-// import { NavLink } from "react-router-dom";
-// import routes from "../../common/routes";
+import { NavLink } from "react-router-dom";
+import routes from "../../common/routes";
 import classes from "./sideDrawer.module.scss";
 
 const SideDrawer = () => {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.routesContainer}>
-        {/* {routes.map((route) => {
+        {routes.map((route) => {
           return (
             <NavLink
               to={route.path}
@@ -16,7 +16,7 @@ const SideDrawer = () => {
               {route.title}
             </NavLink>
           );
-        })} */}
+        })}
       </div>
 
       <button>Logout</button>
