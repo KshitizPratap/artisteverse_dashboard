@@ -1,0 +1,7 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include flex-container(row, space-around, center, 100%, 2rem);
+
+  flex-wrap: wrap;
+}
