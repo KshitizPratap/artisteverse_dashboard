@@ -66,6 +66,13 @@
     svg {
       height: 25px;
       width: 25px;
+      cursor: pointer;
+    }
+
+    .disableArrows {
+      color: #ffffff66;
+      cursor: default;
+      pointer-events: none;
     }
   }
 }

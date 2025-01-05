@@ -8,9 +8,12 @@ type TableProp = {
 };
 
 const Table = ({ title }: TableProp) => {
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(5);
   const [offset, setOffset] = useState(0);
-  const headers = dataTable[0].map((col) => col.label);
+  const totalPages = Math.ceil(dataTable.length / limit);
+  const currentPage = Math.floor(offset / limit) + 1;
+  const paginatedData = dataTable.slice(offset, offset + limit);
+  const headers = paginatedData[0].map((col) => col.label);
 
   return (
     <div className={classes.mainContainer}>
@@ -24,7 +27,7 @@ const Table = ({ title }: TableProp) => {
           </tr>
         </thead>
         <tbody className={classes.tableBody}>
-          {dataTable.map((row, rowIndex) => (
+          {paginatedData.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {row.map((col, colIndex) => (
                 <td key={colIndex}>{col.value}</td>
@@ -34,9 +37,15 @@ const Table = ({ title }: TableProp) => {
         </tbody>
       </table>
       <div className={classes.paginationContainer}>
-        <MdKeyboardArrowLeft />
-        {offset + 1} / {Math.floor(dataTable.length / limit) + 1}
-        <MdKeyboardArrowRight />
+        <MdKeyboardArrowLeft
+          onClick={() => setOffset((prev) => prev - limit)}
+          className={currentPage <= 1 ? classes.disableArrows : ""}
+        />
+        {currentPage} / {totalPages}
+        <MdKeyboardArrowRight
+          onClick={() => setOffset((prev) => prev + limit)}
+          className={currentPage >= totalPages ? classes.disableArrows : ""}
+        />
       </div>
     </div>
   );
