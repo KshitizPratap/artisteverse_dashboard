@@ -42,3 +42,204 @@ export const data = [
     amt: 2100,
   },
 ];
+
+export const dataTable = [
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+  [
+    {
+      id: "user-id",
+      label: "User ID",
+      value: "123432",
+    },
+    {
+      id: "user-name",
+      label: "Username",
+      value: "Kshitiz",
+    },
+    {
+      id: "amount",
+      label: "Amount",
+      value: "$12",
+    },
+    {
+      id: "time-duration",
+      label: "Time Duration",
+      value: "154",
+    },
+  ],
+];

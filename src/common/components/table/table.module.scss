@@ -1,2 +1,71 @@
+@import "/src/common/style/utils.scss";
+
 .mainContainer {
+  @include flex-container(column);
+
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 4px;
+
+  h2 {
+    font-size: var(--subheading-small);
+    font-weight: 500;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 0.5rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .tableHeader {
+    th {
+      text-align: center;
+      padding: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .tableBody {
+    td {
+      text-align: center;
+      padding: 1rem;
+      font-size: var(--para-large);
+      word-wrap: break-word;
+    }
+  }
+
+  th {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.75);
+    border-right: 1px solid rgb(255, 255, 255, 0.75);
+  }
+
+  td {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+    border-right: 1px solid rgb(255, 255, 255, 0.4);
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: none;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+
+  .paginationContainer {
+    @include flex-container(row, flex-end, center, 100%);
+
+    align-self: flex-end;
+    padding: 0 1rem;
+
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
 }

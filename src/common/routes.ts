@@ -1,8 +1,8 @@
 import React from "react";
-import Overview from "../pages/overview/overview";
-import Stats from "../pages/stats/stats";
-import User from "../pages/user/user";
-import Sales from "../pages/sales/sales";
+import Overview from "../pages/overview/Overview";
+import Stats from "../pages/stats/Stats";
+import User from "../pages/user/User";
+import Sales from "../pages/sales/Sales";
 import Karaoke from "../pages/karaoke/karaoke";
 
 type Route = {

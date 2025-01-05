@@ -1,4 +1,4 @@
-import Metrics from "../../common/components/metric/metrics";
+import Metrics from "../../common/components/metric/Metrics";
 import { MetricProps } from "../../common/model/commonTypes";
 import classes from "./overview.module.scss";
 
