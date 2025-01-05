@@ -5,9 +5,10 @@ import classes from "./table.module.scss";
 
 type TableProp = {
   title: string;
+  size?: "medium" | "small";
 };
 
-const Table = ({ title }: TableProp) => {
+const Table = ({ title, size = "medium" }: TableProp) => {
   const [limit, setLimit] = useState(5);
   const [offset, setOffset] = useState(0);
   const totalPages = Math.ceil(dataTable.length / limit);
@@ -18,7 +19,7 @@ const Table = ({ title }: TableProp) => {
   return (
     <div className={classes.mainContainer}>
       <h2>{title}</h2>
-      <table>
+      <table data-size={size}>
         <thead className={classes.tableHeader}>
           <tr>
             {headers.map((header, index) => (
@@ -41,7 +42,9 @@ const Table = ({ title }: TableProp) => {
           onClick={() => setOffset((prev) => prev - limit)}
           className={currentPage <= 1 ? classes.disableArrows : ""}
         />
-        {currentPage} / {totalPages}
+        <span>
+          {currentPage} / {totalPages}
+        </span>
         <MdKeyboardArrowRight
           onClick={() => setOffset((prev) => prev + limit)}
           className={currentPage >= totalPages ? classes.disableArrows : ""}

@@ -4,6 +4,7 @@ const Stats = () => {
   return (
     <div>
       <Table title="Top Fans" />
+      <Table title="Top Sales" size="small" />
     </div>
   );
 };
