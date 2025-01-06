@@ -1,7 +1,9 @@
 @import "/src/common/style/utils.scss";
 
 .mainContainer {
-  @include flex-container(row, space-around, center, 100%, 2rem);
+  @include grid-container(3, 1fr, 2rem);
 
-  flex-wrap: wrap;
+  .colSpan2 {
+    grid-column: span 2;
+  }
 }

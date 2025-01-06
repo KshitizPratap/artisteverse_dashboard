@@ -2,15 +2,15 @@ import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
 interface GlobalStore {
-  temp: boolean;
-  setTemp: (temp: boolean) => void;
+  isAuth: boolean;
+  setIsAuth: (isAuth: boolean) => void;
 }
 
 export const globalStore = create<GlobalStore>()(
   devtools(
     (set) => ({
-      temp: false,
-      setTemp: (temp: boolean) => set({ temp }),
+      isAuth: false,
+      setIsAuth: (isAuth: boolean) => set({ isAuth }),
     }),
     { name: "globalStore" }
   )

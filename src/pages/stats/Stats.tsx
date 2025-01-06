@@ -10,11 +10,17 @@ const Stats = () => {
         return <Metrics {...metrics} />;
       })}
       <Metrics {...overviewMetrics[0]} />
-      <Table title="Top Sales" size="small" />
+      <div className={classes.colSpan2}>
+        <Table title="Top Sales" size="small" />
+      </div>
       <Metrics {...overviewMetrics[0]} />
-      <Table title="Top Sales" size="small" />
+      <div className={classes.colSpan2}>
+        <Table title="Top Sales" size="small" />
+      </div>
       <Metrics {...overviewMetrics[0]} />
-      <Table title="Top Sales" size="small" />
+      <div className={classes.colSpan2}>
+        <Table title="Top Sales" size="small" />
+      </div>
     </div>
   );
 };

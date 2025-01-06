@@ -1,19 +1,17 @@
-import { ReactNode } from "react";
 import Header from "./header/Header";
 import SideDrawer from "./side-drawer/SideDrawer";
 import classes from "./layout.module.scss";
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children?: ReactNode;
-};
-
-const Layout = ({ children }: LayoutProps) => {
+const Layout = () => {
   return (
     <div>
       <Header />
       <div className={classes.contentWrapper}>
         <SideDrawer />
-        <div className={classes.childContainer}>{children}</div>
+        <div className={classes.childContainer}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );
