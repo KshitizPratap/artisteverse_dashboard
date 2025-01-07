@@ -11,6 +11,11 @@
   --subheading-small: 18px;
   --para-large: 14px;
   --para-small: 12px;
+  --chart-color-1: var(--tertiary-color);
+  --chart-color-2: #667cd1;
+  --chart-color-3: var(--primary-color-hover);
+  --chart-color-4: var(--primary-color);
+  --chart-color-5: var(--primary-text-color);
 }
 
 * {
@@ -32,4 +37,8 @@ button {
   cursor: pointer;
   font-family: "Urbanist";
   transition: all ease 0.2s;
+}
+
+.recharts-wrapper {
+  max-height: 235px !important;
 }

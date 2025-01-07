@@ -1,5 +1,6 @@
 import { MetricProps } from "../../model/commonTypes";
 import LineGraph from "../line-graph/LineGraph";
+import PieChart from "../pie-chart/PieChart";
 import classes from "./metrics.module.scss";
 
 const Metrics = (props: MetricProps) => {
@@ -8,10 +9,15 @@ const Metrics = (props: MetricProps) => {
   const getMetrics = () => {
     switch (metricType) {
       case "circular":
-        return null;
+        return (
+          <div className={classes.circularChart}>
+            <p>{title}</p>
+            <PieChart />
+          </div>
+        );
       case "line":
         return (
-          <>
+          <div className={classes.mainContainer}>
             <div className={classes.metricHeader}>
               <div className={classes.title}>
                 <p>{title}</p>
@@ -20,12 +26,12 @@ const Metrics = (props: MetricProps) => {
               </div>
             </div>
             <LineGraph />
-          </>
+          </div>
         );
     }
   };
 
-  return <div className={classes.mainContainer}>{getMetrics()}</div>;
+  return getMetrics();
 };
 
 export default Metrics;

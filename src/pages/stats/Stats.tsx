@@ -9,7 +9,7 @@ const Stats = () => {
       {overviewMetrics.map((metrics) => {
         return <Metrics {...metrics} />;
       })}
-      <Metrics {...overviewMetrics[0]} />
+      <Metrics metricType="circular" title="Age Group" />
       <div className={classes.colSpan2}>
         <Table title="Top Sales" size="small" />
       </div>

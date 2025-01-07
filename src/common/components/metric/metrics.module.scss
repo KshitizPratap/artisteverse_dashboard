@@ -30,3 +30,21 @@
     }
   }
 }
+
+.circularChart {
+  @include flex-container(column, center, center);
+
+  min-height: 250px;
+  min-width: 300px;
+  flex: 1 1 300px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  position: relative;
+  align-self: flex-start;
+  padding-top: 1rem;
+
+  p {
+    margin-top: 10px;
+    font-size: var(--subheading-small);
+  }
+}
