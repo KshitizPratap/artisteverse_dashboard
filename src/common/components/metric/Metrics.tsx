@@ -1,3 +1,4 @@
+import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import { MetricProps } from "../../model/commonTypes";
 import LineGraph from "../line-graph/LineGraph";
 import PieChart from "../pie-chart/PieChart";
@@ -22,7 +23,14 @@ const Metrics = (props: MetricProps) => {
               <div className={classes.title}>
                 <p>{title}</p>
                 <p>{total}</p>
-                <p>{relativeProgress}</p>
+                <p>
+                  {relativeProgress}
+                  {relativeProgress[0] === "+" ? (
+                    <FaArrowTrendUp size={14} />
+                  ) : (
+                    <FaArrowTrendDown size={14} />
+                  )}
+                </p>
               </div>
             </div>
             <LineGraph />

@@ -1,0 +1,33 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include flex-container(row, flex-start, flex-start, 100%, 1rem);
+
+  min-height: 140px;
+  min-width: 350px;
+  padding: 2rem 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  position: relative;
+  align-self: flex-start;
+
+  .content {
+    @include flex-container(column, flex-start, flex-start, 50%, 0.5rem);
+
+    span:first-of-type {
+      font-size: var(--subheading-small);
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    span:nth-of-type(2) {
+      font-size: var(--subheading-large);
+    }
+
+    span:last-of-type {
+      @include flex-container(row, flex-start, center, 50%, 0.35rem);
+
+      font-size: var(--para-small);
+    }
+  }
+}

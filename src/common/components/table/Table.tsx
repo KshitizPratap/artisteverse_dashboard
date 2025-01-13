@@ -19,7 +19,7 @@ const Table = ({ title, size = "medium" }: TableProp) => {
 
   return (
     <div className={classes.mainContainer}>
-      <h2>{title}</h2>
+      <h2 data-size={size}>{title}</h2>
       <table data-size={size}>
         <thead className={classes.tableHeader}>
           <tr>

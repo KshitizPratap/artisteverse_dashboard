@@ -3,7 +3,7 @@
 .mainContainer {
   @include flex-container(column);
 
-  min-height: 250px;
+  min-height: 300px;
   min-width: 300px;
   flex: 1 1 300px;
   padding: 1.5rem;
@@ -13,20 +13,24 @@
   align-self: flex-start;
 
   .metricHeader {
-    .title p:first-of-type {
-      font-size: var(--para-large);
-      line-height: 150%;
-      letter-spacing: 0.5px;
-      font-weight: 600;
-    }
+    .title {
+      p:first-of-type {
+        font-size: var(--subheading-small);
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
 
-    .title p:nth-of-type(2) {
-      font-size: var(--subheading-small);
-      line-height: 140%;
-    }
+      p:nth-of-type(2) {
+        font-size: var(--subheading-large);
+        line-height: 140%;
+      }
 
-    .title p:last-of-type {
-      font-size: var(--para-small);
+      p:last-of-type {
+        @include flex-container(row, flex-start, flex-start, 100%, 0.35rem);
+
+        font-size: var(--para-small);
+      }
     }
   }
 }

@@ -1,0 +1,17 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include grid-container(3, 1fr, 2rem);
+
+  .colSpan2 {
+    grid-column: span 2;
+  }
+
+  .colSpan3 {
+    grid-column: span 3;
+  }
+
+  .salesContainer {
+    @include flex-container(column, flex-start, flex-start, 100%, 1.25rem);
+  }
+}
