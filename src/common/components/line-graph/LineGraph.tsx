@@ -9,6 +9,28 @@ import {
 import { data } from "../../dummyData";
 import classes from "./lineGraph.module.scss";
 
+const CustomTooltip = ({ active, payload, coordinate: { x } }: any) => {
+  // TODO - Fix flickering of tooltip
+  const activeCircle: any = document.getElementsByClassName("recharts-dot")[0];
+  const cy = activeCircle?.cy.baseVal.value || 0;
+
+  if (active && payload && payload.length) {
+    return (
+      <div
+        className={classes.tooltip}
+        style={{
+          left: x - 25,
+          top: cy - 35,
+        }}
+      >
+        <p>{payload[0].value}</p>
+        <span className={classes.downArrow}></span>
+      </div>
+    );
+  }
+  return null;
+};
+
 const LineGraph = () => {
   return (
     <ResponsiveContainer className={classes.graphContainer}>
@@ -21,17 +43,7 @@ const LineGraph = () => {
         </defs>
         <XAxis stroke="#fff" tick={false} padding={{ right: 20 }} />
         <YAxis stroke="#fff" tick={false} padding={{ top: 20 }} />
-        <Tooltip
-          contentStyle={{
-            height: "50px",
-            width: "50px",
-            backgroundColor: "var(--primary-color)",
-            padding: "0",
-          }}
-          itemStyle={{
-            color: "#fff",
-          }}
-        />
+        <Tooltip content={<CustomTooltip />} cursor={false} />
         <Area
           type="monotone"
           dataKey="uv"

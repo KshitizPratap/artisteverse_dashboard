@@ -10,7 +10,7 @@ type TableProp = {
 
 const Table = ({ title, size = "medium" }: TableProp) => {
   // const [limit, setLimit] = useState(5);
-  const limit = 5;
+  const limit = 6;
   const [offset, setOffset] = useState(0);
   const totalPages = Math.ceil(dataTable.length / limit);
   const currentPage = Math.floor(offset / limit) + 1;
@@ -18,7 +18,7 @@ const Table = ({ title, size = "medium" }: TableProp) => {
   const headers = paginatedData[0].map((col) => col.label);
 
   return (
-    <div className={classes.mainContainer}>
+    <div className={classes.mainContainer} data-size={size}>
       <h2 data-size={size}>{title}</h2>
       <table data-size={size}>
         <thead className={classes.tableHeader}>

@@ -7,8 +7,6 @@
   padding: 1rem;
   border-radius: 4px;
   min-width: 350px;
-  flex: 1 1 350px;
-  align-self: flex-start;
 
   h2[data-size="medium"] {
     font-size: var(--subheading-large);
@@ -24,7 +22,6 @@
 
   table {
     width: 100%;
-    margin-top: 0.5rem;
     border-collapse: collapse;
     table-layout: fixed;
 
@@ -76,10 +73,10 @@
   }
 
   .paginationContainer {
-    @include flex-container(row, flex-end, center, 100%);
+    @include flex-container(row, flex-end, flex-end, 100%);
 
-    align-self: flex-end;
     padding: 0 1rem;
+    flex: 1;
 
     svg {
       height: 25px;
@@ -94,7 +91,16 @@
     }
 
     span {
+      margin: 5px 0;
       font-size: var(--para-small);
     }
   }
+}
+
+.mainContainer[data-size="medium"] {
+  min-height: 435px;
+}
+
+.mainContainer[data-size="small"] {
+  min-height: 300px;
 }
