@@ -3,6 +3,7 @@ import { MetricProps } from "../../model/commonTypes";
 import LineGraph from "../line-graph/LineGraph";
 import PieChart from "../pie-chart/PieChart";
 import classes from "./metrics.module.scss";
+import DropdownMenu from "../dropdown/Dropdown";
 
 const Metrics = (props: MetricProps) => {
   const { metricType, title, total = "", relativeProgress = "" } = props;
@@ -32,6 +33,7 @@ const Metrics = (props: MetricProps) => {
                   )}
                 </p>
               </div>
+              <DropdownMenu />
             </div>
             <LineGraph />
           </div>
