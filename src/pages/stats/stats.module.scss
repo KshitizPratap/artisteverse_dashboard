@@ -1,7 +1,9 @@
 @import "/src/common/style/utils.scss";
 
 .mainContainer {
-  @include grid-container(3, 1fr, 2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 
   .colSpan2 {
     grid-column: span 2;

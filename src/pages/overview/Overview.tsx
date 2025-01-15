@@ -6,7 +6,7 @@ import classes from "./overview.module.scss";
 const Overview = () => {
   return (
     <div className={classes.mainContainer}>
-      <div className={classes.welcomeContainer}>
+      <div className={`${classes.welcomeContainer} ${classes.colSpan1}`}>
         <h1>Welcome</h1>
         <h2>Mr. John Doe</h2>
       </div>
@@ -14,9 +14,13 @@ const Overview = () => {
         <Metrics {...overviewMetrics[0]} />
       </div>
       {overviewMetrics.map((metrics) => {
-        return <Metrics {...metrics} />;
+        return (
+          <div className={classes.colSpan1}>
+            <Metrics {...metrics} />
+          </div>
+        );
       })}
-      <div className={classes.colSpan3}>
+      <div className={`${classes.colSpan3} ${classes.tableWrapper}`}>
         <Table title="Top Sales" size="medium" />
       </div>
     </div>

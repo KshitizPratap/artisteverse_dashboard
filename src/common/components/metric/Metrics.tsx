@@ -2,8 +2,8 @@ import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import { MetricProps } from "../../model/commonTypes";
 import LineGraph from "../line-graph/LineGraph";
 import PieChart from "../pie-chart/PieChart";
-import classes from "./metrics.module.scss";
 import DropdownMenu from "../dropdown/Dropdown";
+import classes from "./metrics.module.scss";
 
 const Metrics = (props: MetricProps) => {
   const { metricType, title, total = "", relativeProgress = "" } = props;

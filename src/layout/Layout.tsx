@@ -1,7 +1,7 @@
+import { Outlet } from "react-router-dom";
 import Header from "./header/Header";
 import SideDrawer from "./side-drawer/SideDrawer";
 import classes from "./layout.module.scss";
-import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (

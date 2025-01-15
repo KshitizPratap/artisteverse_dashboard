@@ -5,12 +5,10 @@
 
   min-height: 300px;
   min-width: 300px;
-  flex: 1 1 300px;
   padding: 1.5rem;
   background-color: var(--secondary-color);
   border-radius: 4px;
   position: relative;
-  align-self: flex-start;
 
   .metricHeader {
     @include flex-container(row, space-between);

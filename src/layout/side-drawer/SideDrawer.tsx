@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import routes from "../../common/routes";
-import classes from "./sideDrawer.module.scss";
 import { globalStore } from "../../store/globalStore";
+import classes from "./sideDrawer.module.scss";
 
 const SideDrawer = () => {
   const { setIsAuth } = globalStore();
