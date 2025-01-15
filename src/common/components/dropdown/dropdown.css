@@ -69,3 +69,9 @@ svg {
   color: var(--primary-text-color) !important;
   background-color: var(--primary-color-hover) !important;
 }
+
+.react-select__option--is-selected,
+.react-select__option--is-focused {
+  color: var(--primary-text-color) !important;
+  background-color: var(--primary-color-hover) !important;
+}
