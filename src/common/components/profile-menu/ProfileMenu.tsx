@@ -36,6 +36,7 @@ const ProfileMenu = () => {
                 to={route.path}
                 className={({ isActive }) => (isActive ? classes.active : "")}
                 key={route.path}
+                onClick={() => setIsProfileMenuOpen(false)}
               >
                 {route.title}
               </NavLink>

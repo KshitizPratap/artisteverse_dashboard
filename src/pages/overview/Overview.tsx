@@ -20,7 +20,7 @@ const Overview = () => {
           </div>
         );
       })}
-      <div className={`${classes.colSpan3} ${classes.tableWrapper}`}>
+      <div className={classes.colSpan3}>
         <Table title="Top Sales" size="medium" />
       </div>
     </div>
