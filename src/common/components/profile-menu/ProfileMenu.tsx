@@ -1,8 +1,8 @@
+import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import routes from "../../routes";
 import { globalStore } from "../../../store/globalStore";
 import classes from "./profileMenu.module.scss";
-import { useEffect, useRef } from "react";
 
 const ProfileMenu = () => {
   const { setIsAuth, isProfileMenuOpen, setIsProfileMenuOpen } = globalStore();
