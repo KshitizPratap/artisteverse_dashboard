@@ -16,3 +16,21 @@
     width: 325px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .mainContainer {
+    padding: 0 1rem;
+
+    .logo {
+      width: 275px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mainContainer {
+    .logo {
+      width: 250px;
+    }
+  }
+}

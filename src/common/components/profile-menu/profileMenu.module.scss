@@ -1,0 +1,35 @@
+@import "/src/common/style/utils.scss";
+
+.menuColorWrwapper {
+  @include flex-container(column, center, center, 190px);
+
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 5;
+  height: 215px;
+  background: linear-gradient(to top, #6c2ebf, #9747ff, #b6a2fb);
+  border-radius: 4px;
+
+  .mainContainer {
+    @include flex-container(column, center, center, 182px, 1rem);
+
+    height: 207px;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+
+    a,
+    button {
+      text-decoration: none;
+      background-color: Var(--primary-color);
+      color: var(--primary-text-color);
+      width: 100%;
+      text-align: center;
+      border-radius: 6px;
+      font-size: var(--para-large);
+      transition: all ease 0.3s;
+    }
+  }
+}

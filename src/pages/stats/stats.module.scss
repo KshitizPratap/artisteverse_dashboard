@@ -1,11 +1,26 @@
 @import "/src/common/style/utils.scss";
 
 .mainContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  @include flex-container(row, flex-start, flex-start, 100%, 2rem);
+
+  flex-wrap: wrap;
+
+  .colSpan1 {
+    flex: 1 1 300px;
+    min-width: 300px;
+  }
 
   .colSpan2 {
-    grid-column: span 2;
+    flex: 2 1 600px;
+    min-width: 300px;
+  }
+
+  .colSpan3 {
+    flex: 3 1 900px;
+    min-width: 300px;
+  }
+
+  .tableWrapper {
+    overflow-y: auto;
   }
 }

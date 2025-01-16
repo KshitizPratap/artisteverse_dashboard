@@ -3,11 +3,34 @@
 .mainContainer {
   @include flex-container(row, flex-start, center, 225px);
 
+  height: 80px;
+  position: relative;
+
   .profileName {
     @include flex-container(column, flex-start, center);
   }
 
   .profilePic {
     width: 60px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .mainContainer {
+    width: 60px;
+
+    .profileName {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mainContainer {
+    width: 45px;
+
+    .profilePic {
+      width: 45px;
+    }
   }
 }

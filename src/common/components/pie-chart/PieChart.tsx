@@ -26,8 +26,8 @@ const renderActiveShape = (props: PieSectorDataItem) => {
     startAngle = 0,
     endAngle = 0,
     fill,
-    value = 0,
     name,
+    percent = 0,
   } = props;
 
   const RADIAN = Math.PI / 180;
@@ -95,7 +95,7 @@ const renderActiveShape = (props: PieSectorDataItem) => {
         fill="#fff"
         width={50}
       >
-        {value}
+        {Math.round(percent * 100)}%
       </text>
     </g>
   );
