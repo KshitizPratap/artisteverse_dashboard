@@ -1,0 +1,65 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  table {
+    min-width: 350px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    th {
+      text-align: center;
+      font-weight: normal;
+      background-color: var(--secondary-color);
+    }
+
+    td {
+      text-align: center;
+      font-size: var(--para-large);
+      word-wrap: break-word;
+    }
+
+    th,
+    td {
+      font-size: var(--para-large);
+      padding: 0.5rem;
+      border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+      border-right: 4px solid rgb(255, 255, 255, 0.75);
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: none !important;
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  .paginationContainer {
+    @include flex-container(row, flex-end, flex-end, 100%);
+
+    padding: 0 1rem;
+    flex: 1;
+
+    svg {
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+    }
+
+    .disableArrows {
+      color: #ffffff66;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    span {
+      margin: 5px 0;
+      font-size: var(--para-small);
+    }
+  }
+}

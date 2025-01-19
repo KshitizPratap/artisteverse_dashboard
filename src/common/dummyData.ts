@@ -266,3 +266,262 @@ export const overviewMetrics: Array<MetricProps> = [
     relativeProgress: "+8.7%",
   },
 ];
+
+export const userData = [
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+  [
+    {
+      id: "userId",
+      label: "User ID",
+      value: "123412",
+    },
+    {
+      id: "username",
+      label: "Username",
+      value: "kshitiz",
+    },
+    {
+      id: "email",
+      label: "Email ID",
+      value: "abc@gmail.com",
+    },
+    {
+      id: "mobileNo",
+      label: "Mobile Number",
+      value: "9762929823",
+    },
+    {
+      id: "doj",
+      label: "Date of Joining",
+      value: "12/4/2012",
+    },
+    {
+      id: "login",
+      label: "Login",
+      value: "Gmail",
+    },
+  ],
+];
