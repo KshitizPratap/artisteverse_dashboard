@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { userData } from "../../../common/dummyData";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import classes from "./userTable.module.scss";
+import classes from "./userList.module.scss";
 
-const UserTable = () => {
+const UserList = () => {
   const limit = 6;
   const [offset, setOffset] = useState(0);
   const totalPages = Math.ceil(userData.length / limit);
@@ -48,4 +48,4 @@ const UserTable = () => {
   );
 };
 
-export default UserTable;
+export default UserList;

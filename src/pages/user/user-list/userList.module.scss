@@ -1,16 +1,19 @@
 @import "/src/common/style/utils.scss";
 
 .mainContainer {
+  overflow-x: auto;
+  width: 100%;
+
   table {
     min-width: 350px;
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
 
     th {
       text-align: center;
       font-weight: normal;
       background-color: var(--secondary-color);
+      border-bottom: 1px solid #fff !important;
     }
 
     td {
@@ -24,7 +27,7 @@
       font-size: var(--para-large);
       padding: 0.5rem;
       border-bottom: 1px solid rgb(255, 255, 255, 0.4);
-      border-right: 4px solid rgb(255, 255, 255, 0.75);
+      border-right: 4px solid rgb(255, 255, 255);
     }
 
     th:last-child,
@@ -61,5 +64,9 @@
       margin: 5px 0;
       font-size: var(--para-small);
     }
+  }
+
+  @media (max-width: 350px) {
+    width: calc(100vw - 1rem);
   }
 }

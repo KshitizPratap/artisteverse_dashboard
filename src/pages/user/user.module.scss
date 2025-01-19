@@ -1,0 +1,47 @@
+@import "/src/common/style/utils.scss";
+
+.mainContainer {
+  @include flex-container(column, flex-start, flex-start, 100%, 2rem);
+
+  .userAction {
+    @include flex-container(row, space-between, center, 100%, 1rem);
+
+    min-height: 2rem;
+    flex-wrap: wrap;
+
+    .tabContainer {
+      span {
+        padding: 0.25rem 1.5rem;
+        background-color: var(--primary-color);
+        text-align: center;
+        font-size: var(--para-large);
+        cursor: pointer;
+      }
+
+      span[data-tab="true"] {
+        background-color: var(--primary-color-hover);
+        box-shadow: inset 0px 0px 4px 2px #4f4f4f;
+      }
+    }
+
+    button {
+      border: none;
+      padding: 0.5rem 1rem;
+      background-color: #35c33d;
+      color: var(--primary-text-color);
+      font-size: var(--para-large);
+      font-weight: 500;
+    }
+
+    button:hover {
+      background-color: #2c9e32;
+    }
+  }
+
+  div[data-tab="false"] {
+    display: none;
+  }
+  div[data-tab] {
+    width: 100%;
+  }
+}

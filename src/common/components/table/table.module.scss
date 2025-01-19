@@ -6,7 +6,7 @@
   background-color: var(--secondary-color);
   padding: 1rem;
   border-radius: 4px;
-  overflow-y: auto;
+  overflow: auto;
 
   h2[data-size="medium"] {
     font-size: var(--subheading-large);
