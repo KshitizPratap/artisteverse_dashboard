@@ -1,9 +1,10 @@
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 import { MetricProps } from "../../model/commonTypes";
-import LineGraph from "../line-graph/LineGraph";
-import PieChart from "../pie-chart/PieChart";
 import DropdownMenu from "../dropdown/Dropdown";
+import PieChart from "./pie-chart/PieChart";
+import LineGraph from "./line-graph/LineGraph";
 import classes from "./metrics.module.scss";
+import VerticalBarGraph from "./vertical-bar-graph/VerticalBarGraph";
 
 const Metrics = (props: MetricProps) => {
   const { metricType, title, total = "", relativeProgress = "" } = props;
@@ -36,6 +37,13 @@ const Metrics = (props: MetricProps) => {
               <DropdownMenu />
             </div>
             <LineGraph />
+          </div>
+        );
+      case "vertical-bar":
+        return (
+          <div className={classes.circularChart}>
+            <p>{title}</p>
+            <VerticalBarGraph />
           </div>
         );
     }

@@ -26,7 +26,7 @@ const Stats = () => {
         <Table title="Top Sales" size="small" />
       </div>
       <div className={classes.colSpan1}>
-        <Metrics {...overviewMetrics[0]} />
+        <Metrics metricType="vertical-bar" title="Age Group" />
       </div>
       <div className={classes.colSpan2}>
         <Table title="Top Sales" size="small" />

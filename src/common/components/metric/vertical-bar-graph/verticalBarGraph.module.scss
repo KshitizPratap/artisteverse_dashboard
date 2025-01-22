@@ -1,0 +1,40 @@
+.mainContainer {
+  min-height: 250px;
+  min-width: 300px;
+
+  g:focus {
+    outline: none;
+  }
+}
+
+@import "/src/common/style/utils.scss";
+
+.tooltip {
+  @include flex-container(row, center, center);
+
+  height: 20px;
+  width: 50px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--primary-color) !important;
+  border: 1px solid #fff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  p {
+    font-size: var(--para-small);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .downArrow {
+    background-color: var(--primary-color) !important;
+    border-bottom: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    top: 15px;
+    rotate: 45deg;
+  }
+}

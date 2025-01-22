@@ -42,3 +42,7 @@ button {
 .recharts-wrapper {
   max-height: 235px !important;
 }
+
+.recharts-cartesian-grid-horizontal line:last-child {
+  display: none;
+}

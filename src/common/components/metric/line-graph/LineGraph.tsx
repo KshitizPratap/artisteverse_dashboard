@@ -6,7 +6,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { data } from "../../dummyData";
+import { data } from "../../../dummyData";
 import classes from "./lineGraph.module.scss";
 
 const CustomTooltip = ({ active, payload, coordinate: { x } }: any) => {

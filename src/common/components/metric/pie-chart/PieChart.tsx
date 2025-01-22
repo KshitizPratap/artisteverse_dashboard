@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { PieChart as PChart, Pie, Sector, ResponsiveContainer } from "recharts";
 import { PieSectorDataItem } from "recharts/types/polar/Pie";
-import { chartColors } from "../../utils";
-
+import { chartColors } from "../../../utils";
 import classes from "./pieChart.module.scss";
-import "../../../index.css";
+import "../../../../index.css";
 
 const data = [
   { name: "G", value: 400 },
