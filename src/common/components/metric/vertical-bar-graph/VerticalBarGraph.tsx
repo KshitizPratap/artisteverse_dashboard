@@ -119,7 +119,7 @@ const VerticalBarGraph = () => {
           barSize={30}
           radius={[5, 5, 0, 0]}
         >
-          {data.map((entry, index) => {
+          {data.map((_, index) => {
             return (
               <Cell
                 key={`cell-${index}`}
