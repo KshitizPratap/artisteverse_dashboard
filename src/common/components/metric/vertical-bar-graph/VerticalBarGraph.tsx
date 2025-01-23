@@ -81,7 +81,7 @@ const VerticalBarGraph = () => {
           vertical={false}
           strokeDasharray="0"
         />
-        <XAxis stroke="#bbb" tick={false} padding={{ right: 20 }} />
+        <XAxis stroke="#aaa" tick={false} padding={{ right: 20 }} />
         <YAxis
           stroke="#fff"
           padding={{ top: 20 }}

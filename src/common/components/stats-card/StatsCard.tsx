@@ -1,6 +1,6 @@
 import { AiOutlineDollar } from "react-icons/ai";
-import classes from "./statsCard.module.scss";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
+import classes from "./statsCard.module.scss";
 
 type StatsProps = {
   title: string;

@@ -19,8 +19,4 @@
     flex: 3 1 900px;
     min-width: 300px;
   }
-
-  .salesContainer {
-    @include flex-container(column, flex-start, flex-start, 100%, 1.25rem);
-  }
 }

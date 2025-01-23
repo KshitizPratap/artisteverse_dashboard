@@ -6,9 +6,11 @@ import classes from "./sales.module.scss";
 const Sales = () => {
   return (
     <div className={classes.mainContainer}>
-      <Metrics {...overviewMetrics[0]} />
-      <div className={classes.salesContainer}>
-        <StatsCard title="Total Sales" change="+10.6%" value="12,125" />{" "}
+      <div className={classes.colSpan1}>
+        <Metrics {...overviewMetrics[0]} />
+      </div>
+      <div className={`${classes.salesContainer} ${classes.colSpan1}`}>
+        <StatsCard title="Total Sales" change="+10.6%" value="12,125" />
         <StatsCard title="Total Sales" change="+10.6%" value="12,125" />
       </div>
     </div>
